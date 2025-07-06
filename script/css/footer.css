@@ -1,0 +1,124 @@
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: var(--warning);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 100;
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover {
+        color: var(--warning);
+        background: var(--white);
+        transform: translateY(-3px);
+    }
+}
+
+.footer-section {
+    align-items: center;
+    position: relative;
+    background-color: var(--white);
+    background-image: url('images/ellipse-left.png'), url('images/ellipse-right.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation: floatEllipses 10s ease-in-out infinite;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 28px;
+}
+
+.footer-widget-heading h3 {
+    color: var(--warning);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: var(--warning);
+}
+
+.footer-widget ul li {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+    color: var(--warning);
+    text-decoration: none;
+}
+
+.footer-widget ul li a {
+    color: var(--dark);
+    text-transform: capitalize;
+}
+
+.copyright-area {
+    background: var(--white);
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.copyright-text p a {
+    color: var(--warning);
+}
+
+.copyright-text a:hover {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: var(--warning);
+    text-decoration: none;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: var(--black);
+}

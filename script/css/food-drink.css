@@ -1,0 +1,41 @@
+nav .list-food-drink {
+    display: flex;
+    gap: 20px;
+}
+
+nav .list-food-drink>li {
+    border-radius: 15px;
+    padding: 4px 20px;
+    background-color: orange;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transition: all 0.5 ease;
+}
+
+nav .list-food-drink>li:hover {
+    transform: scale(1.02) translateY(-3px) rotate(1deg);
+}
+
+.list-food-drink li>.food-drink {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.list-food-drink li>.food-drink:hover {
+    text-decoration: none;
+}
+
+.paragraph,
+#btn1c {
+    display: none;
+}
+
+@media screen and (max-width: 790px) {
+    nav .list-food-drink {
+        gap: 10px;
+    }
+    .list-food-drink li>.food-drink {
+        font-size: 10px;
+        color: var(--secondary);
+    }
+}
