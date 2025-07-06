@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angkor Fresh</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="script/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="script/css/footer.css" />
+    <link rel="stylesheet" href="script/css/index.css" />
+    <link rel="stylesheet" href="script/css/about.css">
+    <script src="script/js/database.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <a href="index.html" class="navbar-brand" id="logo">
+                <img src="images/logo.png" alt="" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="food.html">Food</a></li>
+                            <li><a class="dropdown-item" href="drink.html">Drink</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex text-center">
+                    <a href="contact.html" class="btn btn-warning header-cta">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="row" id="about-show">
+            <div class="col-lg-6">
+                <img src="images/logo1.png" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h2 id="about-show-h1">Angkor <span id="about-show-span">Fresh</span></h2>
+                <p id="about-show-p">Cambodia’s fresh food culture is rooted in rice farming and fishing, dating back thousands of years. The Angkor Empire improved agriculture with advanced irrigation, while French rule later introduced new vegetables and cooking styles.
+                    The Khmer Rouge caused major food shortages, but recovery began in the 1980s. Today, traditional markets remain important, with growing interest in organic farming and food safety.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="member-show">
+        <div class="container py-5">
+            <h1 class="text-center">Our Team Member</h1>
+            <h4>"Farm to fork isn't a trend for us - it's how we've cooked for generations. Meet the team that turns morning market hauls into your memorable meals."</h4>
+            <div class="row" id="member-blog">
+                <div class="col-lg-4 col-md-6 text-center mb-5 mt-5">
+                    <img src="images/profile.jpg" alt="" id="member-img">
+                    <div id="member-text" class="text-center member-text">
+                        <h5>Heng Vathanak</h5>
+                        <p>Founder & CEO</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5 mt-5">
+                    <img src="images/rathana.png" alt="" id="member-img">
+                    <div id="member-text" class="text-center member-text">
+                        <h5>Rotana Ngin</h5>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5 mt-5">
+                    <img src="images/nita.png" alt="" id="member-img">
+                    <div id="member-text" class="text-center member-text">
+                        <h5>Mith Sensonita</h5>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="member-blog">
+                <div class="col-lg-4 col-md-6 text-center mb-5 mt-5">
+                    <img src="images/sokpheak.png" alt="" id="member-img">
+                    <div id="member-text" class="text-center member-text">
+                        <h5>Loeung Sopheak</h5>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5 mt-5">
+                    <img src="images/nika.png" alt="" id="member-img">
+                    <div id="member-text" class="text-center member-text">
+                        <h5>Sat Kanika</h5>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5 mt-5">
+                    <img src="images/about-us-information-img.png" alt="" id="member-img">
+                    <div id="member-text" class="text-center member-text">
+                        <h5>Keurn Sophorn</h5>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="feadback-group" class="mt-5">
+        <div class="row">
+            <script>
+                for (let j = 0; j < feadback_list.length; j++) {
+                    document.write(`
+                    <div class="col-lg-4 col-md-6 mb-5 py-3 feadback">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="user-feadback card-title">
+                                    <img src="images/user-profile.webp" alt="">
+                                    <span>${feadback_list[j][0]}</span>
+                                </div>
+                                <hr>
+                                <div class="text-feadback">
+                                    <p>"${feadback_list[j][1]}"</p>
+                                </div>
+                                <div class="rating">
+                                    ${feadback_list[j][2]}
+                                    ${feadback_list[j][3]}
+                                    ${feadback_list[j][4]}
+                                    ${feadback_list[j][5]}
+                                    ${feadback_list[j][6]}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+                }
+            </script>
+        </div>
+
+    </section>
+
+
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Delivering the best food with quality service and fast delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don't miss to subscribe to our newsletter for the latest products and offers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2025, All Right Reserved <a href="#">Angkor Fresh</a></p>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script/js/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script/js/bootstrap.min.js"></script>
+    <script src="script/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="script/js/popper.min.js"></script>
+    <script src="script/js/footer.js"></script>
+</body>
+
+</html>
